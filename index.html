@@ -8,7 +8,7 @@
 <head>
     <title>THE FOUNDATION</title>
     <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
     <link rel="stylesheet" href="assets/css/main.css"/>
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css"/>
@@ -36,10 +36,8 @@
             <p>The Foundation’s simulations stand out for their ability to enhance learning retention, transfer of
                 knowledge, and self-efficacy. By offering a highly realistic and interactive experience, we empower your
                 workforce to master complex tasks and achieve operational excellence.</p>
-            <p>
-
-            <span class="video main">
-                <iframe width="854" height="480" src="https://www.youtube.com/embed/iUSCZionWD0" title="TheFoundation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <span  class="video main">
+                <iframe id="tf_video" src="https://www.youtube.com/embed/iUSCZionWD0" title="TheFoundation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </span>
             <nav>
                 <ul>
@@ -58,7 +56,7 @@
 </div>
 <script>
     window.onload = function() { document.body.classList.remove('is-preload'); }
-    window.ontouchmove = function() { return false; }
+    window.ontouchmove = function() { return true; }
     window.onorientationchange = function() { document.body.scrollTop = 0; }
 </script>
 </body>
